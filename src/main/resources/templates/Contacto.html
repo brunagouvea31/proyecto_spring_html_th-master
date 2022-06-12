@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlms="https://www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página EOI</title>
+
+</head>
+
+<body>
+<div th: th:replace="~{fragment/Cabecera :: cabeceraContacto}"></div>
+<div th: th:replace="~{fragment/BarraNavegacion :: barraNavegacion}"></div>
+
+<article>
+    <section>
+        <textfield   th:text="${attrContacto.email}"/>
+        <textfield   th:text="${attrContacto.contactoTel}"/>
+    </section>
+</article>
+
+<footer>
+    <div th:replace="~{fragment/Footer :: footer}"></div>
+</footer>
+
+</body>
+</html>

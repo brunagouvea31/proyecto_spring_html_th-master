@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlms="https://www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Clientes</title>
+
+</head>
+
+<body>
+<div th: th:replace="~{fragment/Cabecera :: cabeceraQuienes}"></div>
+<div th: th:replace="~{fragment/BarraNavegacion :: barraNavegacion}"></div>
+
+<article>
+    <section>
+        <img th:src="${attrQuienes.fotoQuienes}"/>
+        <textfield   th:text="${attrQuienes.descripcion}"/>
+    </section>
+</article>
+
+<footer>
+    <div th:replace="~{fragment/Footer :: footer}"></div>
+</footer>
+
+</body>
+</html>
